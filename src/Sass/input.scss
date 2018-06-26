@@ -1,2 +1,23 @@
 @import "_mixins";
 @import "_variables";
+
+$primary: #71c7ec;
+$secondary: #107dac;
+$dark: #005073;
+
+.primary-test, .secondary-test, .dark-test {
+    width: 100vw;
+    height: 20vh;
+}
+
+.primary-test{
+    background-color: $primary;
+}
+
+.secondary-test{
+    background-color: $secondary;
+}
+
+.dark-test{
+    background-color: $dark;
+}

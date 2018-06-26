@@ -1,0 +1,18 @@
+.primary-test, .secondary-test, .dark-test {
+  width: 100vw;
+  height: 20vh;
+}
+
+.primary-test {
+  background-color: #71c7ec;
+}
+
+.secondary-test {
+  background-color: #107dac;
+}
+
+.dark-test {
+  background-color: #005073;
+}
+
+/*# sourceMappingURL=output.css.map */
