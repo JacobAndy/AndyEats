@@ -4,10 +4,15 @@ const express = require("express"),
   session = require("express-session"),
   { json } = require("body-parser"),
   cors = require("cors"),
+  massive = require("massive"),
   port = process.env.PORT || 3001;
 
 app.use(json());
 app.use(cors());
+
+massive(process.env.DATABASE_KEY)
+  .then(db => app.set("db", db))
+  .catch(err => console.log(`Error on database key set = ${err}`));
 
 app.use(
   session({
