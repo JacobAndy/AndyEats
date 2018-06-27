@@ -1,5 +1,8 @@
 @import "_mixins";
 @import "_variables";
+@import "reset";
+
+// REAL CSS
 
 * {
   margin: 0;
@@ -169,6 +172,9 @@
   margin: 20px auto;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
+  &::placeholder {
+    color: white;
+  }
 }
 
 .option-value {
