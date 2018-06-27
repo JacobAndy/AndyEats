@@ -1,13 +1,19 @@
 @import "_mixins";
 @import "_variables";
 
-$primary: #71c7ec;
-$secondary: #107dac;
+$primary: #107dac;
+$secondary: #71c7ec;
 $dark: #005073;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .primary-test, .secondary-test, .dark-test {
     width: 100vw;
-    height: 20vh;
+    height: 100vh;
 }
 
 .primary-test{

@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .primary-test, .secondary-test, .dark-test {
   width: 100vw;
-  height: 20vh;
+  height: 100vh;
 }
 
 .primary-test {
