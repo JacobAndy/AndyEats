@@ -20,6 +20,14 @@
     align-items: center;
   }
 }
+.tab-holder {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
 
 .footer {
   position: absolute;
@@ -29,6 +37,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  text-align: center;
   &__text {
     font-size: 10px;
     font-family: sans-serif;
@@ -37,24 +46,66 @@
 }
 @media (max-width: 1024px) {
   .nav {
-    width: 20px;
-    height: 20px;
+    background: #999;
+    width: 45px;
+    height: 45px;
     top: 10px;
     left: 10px;
+    border-radius: 6px;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .nav__sections {
+    padding: 100px 0 200px 0;
+    background: #999;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     height: 100vh;
-    width: 50px;
+    width: 200px;
     left: 0px;
     top: 0;
+    z-index: -100;
+  }
+  .tab-holder {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
   }
   .nav-sections-hidden {
-    left: -50px;
+    transition: 0.2s;
+    left: -200px;
   }
   .nav-sections-visible {
+    transition: 0.2s;
     left: 0px;
+  }
+
+  .topBurger,
+  .middleBurger,
+  .bottomBurger {
+    transition: 0.3s;
+    width: 80%;
+    background: black;
+    height: 7px;
+    border-radius: 10px;
+  }
+  .topActive {
+    // width: 100%;
+    transform: translate(0, 210%) rotate(45deg);
+  }
+  .middleNotActive {
+    animation: middleBurgerNa 0.1s forwards;
+  }
+  .middleActive {
+    animation: middleBurger 0.3s forwards;
+  }
+  .bottomActive {
+    // width: 100%;
+
+    transform: translate(0, -210%) rotate(-45deg);
   }
 }
 
@@ -182,4 +233,32 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+@keyframes middleBurger {
+  0% {
+    opacity: 1;
+    margin: 0;
+  }
+  50% {
+    opacity: 0.3;
+    margin-left: 100px;
+  }
+  100% {
+    margin-right: 200px;
+    opacity: 0;
+  }
+}
+@keyframes middleBurgerNa {
+  0% {
+    opacity: 0;
+    margin-right: 200px;
+  }
+  50% {
+    opacity: 0.5;
+    margin-right: 100px;
+  }
+  100% {
+    margin-right: 0px;
+    opacity: 1;
+  }
 }
