@@ -1,6 +1,5 @@
 @import "_mixins";
 @import "_variables";
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600");
 
 /* RESET CSS */
 html,
@@ -200,10 +199,6 @@ table {
   margin: 20px auto;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
-
-  // @include placeholder{
-  //   color: black;
-  // }
 }
 
 .option-value {
