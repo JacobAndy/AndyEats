@@ -6,8 +6,8 @@ import NavBar from "./components/NavBar";
 class App extends Component {
   render() {
     return (
-      <div>
-        <NavBar />
+      <div className="main-app-container">
+        {/* <NavBar /> */}
         {routes}
         <Footer />
       </div>
