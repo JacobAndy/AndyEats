@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600");
 /* RESET CSS */
 html,
 body,
@@ -87,7 +86,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serrif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -136,7 +135,7 @@ table {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serrif;
   color: white;
 }
 
@@ -229,27 +228,35 @@ table {
     width: 50px;
     left: 0px;
   }
-}
 
-@keyframes middleBurger {
-  0% {
-    opacity: 1;
-    margin: 0; }
-  50% {
-    opacity: 0.3;
-    margin-left: 100px; }
-  100% {
-    margin-right: 200px;
-    opacity: 0; } }
-@keyframes middleBurgerNa {
-  0% {
-    opacity: 0;
-    margin-right: 200px; }
-  50% {
-    opacity: 0.5;
-    margin-right: 100px; }
-  100% {
-    margin-right: 0px;
-    opacity: 1; } }
+  @keyframes middleBurger {
+    0% {
+      opacity: 1;
+      margin: 0;
+    }
+    50% {
+      opacity: 0.3;
+      margin-left: 100px;
+    }
+    100% {
+      margin-right: 200px;
+      opacity: 0;
+    }
+  }
+  @keyframes middleBurgerNa {
+    0% {
+      opacity: 0;
+      margin-right: 200px;
+    }
+    50% {
+      opacity: 0.5;
+      margin-right: 100px;
+    }
+    100% {
+      margin-right: 0px;
+      opacity: 1;
+    }
+  }
+}
 
 /*# sourceMappingURL=output.css.map */
