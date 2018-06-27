@@ -4,7 +4,7 @@ import Locations from "./components/Location";
 import About from "./components/About";
 import OrderDetails from "./components/OrderDetails";
 import PastOrders from "./components/PastOrders";
-import StoreSelection from "./components/StoreSelection";
+import StoreSelection from "./components/stores/StoreSelection";
 import Checkout from "./components/Checkout";
 
 export default (
