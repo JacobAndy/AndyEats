@@ -1,6 +1,35 @@
 @import "_mixins";
 @import "_variables";
 
+$primary: #107dac;
+$secondary: #71c7ec;
+$dark: #005073;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.primary-test,
+.secondary-test,
+.dark-test {
+  width: 100vw;
+  height: 100vh;
+}
+
+.primary-test {
+  background-color: $primary;
+}
+
+.secondary-test {
+  background-color: $secondary;
+}
+
+.dark-test {
+  background-color: $dark;
+}
+
 .nav {
   width: 100%;
   background-color: #999;
