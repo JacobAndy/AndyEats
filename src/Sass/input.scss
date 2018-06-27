@@ -245,4 +245,32 @@ table {
       left: 0px;
     }
   }
+  @keyframes middleBurger {
+    0% {
+      opacity: 1;
+      margin: 0;
+    }
+    50% {
+      opacity: 0.3;
+      margin-left: 100px;
+    }
+    100% {
+      margin-right: 200px;
+      opacity: 0;
+    }
+  }
+  @keyframes middleBurgerNa {
+    0% {
+      opacity: 0;
+      margin-right: 200px;
+    }
+    50% {
+      opacity: 0.5;
+      margin-right: 100px;
+    }
+    100% {
+      margin-right: 0px;
+      opacity: 1;
+    }
+  }
 }
