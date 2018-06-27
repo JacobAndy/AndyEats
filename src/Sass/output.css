@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -23,10 +24,162 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+=======
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Montserrat", sans-serrif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serrif;
+  color: white;
+}
+
+.main-app-container {
+  overflow-x: hidden;
+  background-color: #107dac;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.nav {
+>>>>>>> master
   width: 100%;
   background-color: #999;
   position: fixed;
   top: 0;
+<<<<<<< HEAD
   height: 5.5vh; }
   .nav__sections {
     display: flex;
@@ -45,10 +198,38 @@
   width: 100%; }
 
 .footer {
+=======
+  height: 5.5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav__sections {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  border-style: none;
+  border-bottom: 1px solid white;
+}
+
+.section-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+>>>>>>> master
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   position: absolute;
   bottom: 10px;
   width: 100%;
@@ -139,5 +320,85 @@
   100% {
     margin-right: 0px;
     opacity: 1; } }
+=======
+  min-width: 75%;
+}
+
+.section-question {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.section-input {
+  width: 90%;
+  height: 35px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.option-value {
+  color: black;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footer__text {
+  font-size: 10px;
+  font-weight: 200;
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+  }
+  .nav__sections {
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 50px;
+    left: 0px;
+  }
+
+  @keyframes middleBurger {
+    0% {
+      opacity: 1;
+      margin: 0;
+    }
+    50% {
+      opacity: 0.3;
+      margin-left: 100px;
+    }
+    100% {
+      margin-right: 200px;
+      opacity: 0;
+    }
+  }
+  @keyframes middleBurgerNa {
+    0% {
+      opacity: 0;
+      margin-right: 200px;
+    }
+    50% {
+      opacity: 0.5;
+      margin-right: 100px;
+    }
+    100% {
+      margin-right: 0px;
+      opacity: 1;
+    }
+  }
+}
+>>>>>>> master
 
 /*# sourceMappingURL=output.css.map */
