@@ -5,9 +5,9 @@ export default class Store extends Component {
   render() {
     let { name, location, hours } = this.props;
     return (
-      <div>
+      <div className="ind-store-details">
+        <i />
         <p>{name}</p>
-        <p>{location}</p>
         <p>{hours}</p>
       </div>
     );
