@@ -10,9 +10,9 @@ export default class Location extends Component {
             Where should we deliver to today?
           </h2>
           <input className="section-input input" placeholder="Street Address" />
-          <div>
-            <input className="section-input input" placeholder="City" />
-            <select style={{ color: "black", borderStyle: "none", maxHeight: "200px" }}>
+          <input className="section-input input" placeholder="City" />
+          <div className="section-button-wrapper">
+            <select>
               <option className="option-value" value="AL">
                 AL
               </option>
@@ -164,6 +164,7 @@ export default class Location extends Component {
                 WY
               </option>
             </select>
+            <button>Next Step</button>
           </div>
         </div>
       </div>
