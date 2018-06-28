@@ -2,13 +2,14 @@
 @import "_variables";
 @import "reset";
 
-// REAL CSS
+// GLOBAL
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 i {
   border: solid black;
   border-width: 0 4px 4px 0;
@@ -21,6 +22,14 @@ i {
     transform: rotate(-135deg);
   }
 }
+
+.main-app-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary;
+}
+
+// NAVBAR
 
 .nav {
   @include flex(row, center, center);
@@ -56,6 +65,7 @@ i {
 }
 
 //STORE SELECTION CSS
+
 .ind-store-details {
   height: 80px;
   @include store-selection;
@@ -83,6 +93,7 @@ i {
     border-radius: 6px;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 100;
   }
   .nav__sections {
     padding: 100px 0 200px 0;
@@ -93,7 +104,7 @@ i {
     width: 200px;
     left: 0px;
     top: 0;
-    z-index: -100;
+    z-index: 100;
   }
   .tab-holder {
     height: 70%;
@@ -123,6 +134,7 @@ i {
     background: black;
     height: 7px;
     border-radius: 10px;
+    z-index: 101;
   }
   .topActive {
     // width: 100%;
@@ -176,6 +188,7 @@ i {
 .section-question {
   font-size: 25px;
   font-weight: 400;
+  color: white;
 }
 
 .section-input {
@@ -184,6 +197,7 @@ i {
   margin: 20px auto;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
+  color: white;
   &::placeholder {
     color: white;
   }
@@ -191,6 +205,12 @@ i {
 
 .option-value {
   color: black;
+}
+
+.section-button-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
 
 // FOOTER
