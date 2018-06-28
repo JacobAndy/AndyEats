@@ -4,3 +4,12 @@
   justify-content: $jc;
   align-items: $ai;
 }
+@mixin store-selection {
+  min-width: 300px;
+  max-width: 700px;
+  background: lightblue;
+  border-radius: 10px 3px 10px 3px;
+  box-shadow: 2px 2px 4px 3px black;
+  margin-top: 2em;
+  transition: box-shadow 0.1s;
+}

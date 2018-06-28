@@ -11,26 +11,15 @@
 }
 i {
   border: solid black;
-  border-width: 0 3px 3px 0;
-}
-
-.primary-test,
-.secondary-test,
-.dark-test {
-  width: 100vw;
-  height: 100vh;
-}
-
-.primary-test {
-  background-color: $primary;
-}
-
-.secondary-test {
-  background-color: $secondary;
-}
-
-.dark-test {
-  background-color: $dark;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 4px;
+  transition: border-width 0.1s;
+  transform: rotate(45deg);
+  &:active {
+    border-width: 0 2px 2px 0;
+    transform: rotate(-135deg);
+  }
 }
 
 .nav {
@@ -68,16 +57,14 @@ i {
 
 //STORE SELECTION CSS
 .ind-store-details {
-  min-width: 300px;
-  max-width: 700px;
   height: 80px;
-  background: lightblue;
-  border-radius: 10px 3px 10px 3px;
-  box-shadow: 2px 2px 4px 3px black;
-  // margin-left: 2em;
-  margin-top: 2em;
-  transition: box-shadow 0.1s;
+  @include store-selection;
   @include flex(column, center, center);
+  &__active-click {
+    height: 200px;
+    @include store-selection;
+    @include flex(column, center, center);
+  }
   &:active {
     box-shadow: 1px 1px 4px 2px grey;
   }
@@ -85,6 +72,7 @@ i {
     background: rgb(83, 193, 230);
   }
 }
+
 @media (max-width: 1024px) {
   .nav {
     background: #999;
