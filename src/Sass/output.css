@@ -131,22 +131,14 @@ table {
 
 i {
   border: solid black;
-  border-width: 0 3px 3px 0; }
-
-.primary-test,
-.secondary-test,
-.dark-test {
-  width: 100vw;
-  height: 100vh; }
-
-.primary-test {
-  background-color: #107dac; }
-
-.secondary-test {
-  background-color: #71c7ec; }
-
-.dark-test {
-  background-color: #005073; }
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 4px;
+  transition: border-width 0.1s;
+  transform: rotate(45deg); }
+  i:active {
+    border-width: 0 2px 2px 0;
+    transform: rotate(-135deg); }
 
 .nav {
   display: flex;
@@ -189,9 +181,9 @@ i {
     font-weight: 200; }
 
 .ind-store-details {
+  height: 80px;
   min-width: 300px;
   max-width: 700px;
-  height: 80px;
   background: lightblue;
   border-radius: 10px 3px 10px 3px;
   box-shadow: 2px 2px 4px 3px black;
@@ -201,6 +193,19 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .ind-store-details__active-click {
+    height: 200px;
+    min-width: 300px;
+    max-width: 700px;
+    background: lightblue;
+    border-radius: 10px 3px 10px 3px;
+    box-shadow: 2px 2px 4px 3px black;
+    margin-top: 2em;
+    transition: box-shadow 0.1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .ind-store-details:active {
     box-shadow: 1px 1px 4px 2px grey; }
   .ind-store-details:hover {
